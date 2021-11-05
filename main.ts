@@ -5,15 +5,7 @@ basic.forever(function () {
     DigitalPin.P1,
     PingUnit.Centimeters
     )
-    if (distance >= 5) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
-    } else if (distance == 10) {
+    if (distance == 10) {
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -53,7 +45,5 @@ basic.forever(function () {
             # # # # #
             # # # # #
             `)
-    } else {
-    	
     }
 })
